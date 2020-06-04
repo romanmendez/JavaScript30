@@ -16,8 +16,10 @@ const App = () => {
   document.addEventListener("keyup", handleKeyup)
   return (
     <DrumContext.Provider value={{ keyPress }}>
-      {samples.map(sample =>
-        <Drum letter={sample.letter} label={sample.name} audio={sample.sample} />
+      {samples.map((sample, i) => {
+        console.log(sample)
+        return <Drum key={sample.sample} letter={sample.letter} label={sample.name} audio={sample.sample} />
+      }
       )}
     </DrumContext.Provider>
   )

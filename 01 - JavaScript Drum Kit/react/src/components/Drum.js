@@ -13,7 +13,7 @@ const Drum = ({ letter, label, audio }) => {
 
   if (keyPress === letter) {
     sound.currentTime = 0
-    sound.play().then(res => console.log(res)).catch(err => console.log(err))
+    sound.play()
   }
 
   return (

@@ -18,10 +18,4 @@ body,html {
   justify-content: center;
 }
 
-.playing {
-  transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
-}
-
 /*# sourceMappingURL=/style.9cf674f6.css.map */
